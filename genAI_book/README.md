@@ -443,7 +443,7 @@ gcloud eventarc triggers create trigger-eventarc-test-service \
 - 変更前
 ```
 date > /tmp/testfile.txt
-gsutil cp /tmp/testfile.txt \
+gcloud storage cp /tmp/testfile.txt \
   gs://$GOOGLE_CLOUD_PROJECT.appspot.com/test/testfile.txt
 ```
 - 変更後
